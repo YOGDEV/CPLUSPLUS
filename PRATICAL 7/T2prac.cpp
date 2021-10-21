@@ -21,7 +21,7 @@ for(i=1;i<=n;i++)
   cout<<arr[i][j]<<"  ";
   cout<<"\n";
 }
-cout<<"\nMatrix after evalution :\n";//1 reversing operation
+cout<<"\nMatrix after evalution :\n";// reversing operation i.e printing in reverse order...
 for(i=n;i>=1;i--)
 {
 for(j=n;j>=1;j--)
