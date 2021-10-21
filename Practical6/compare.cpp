@@ -11,7 +11,7 @@ getline(cin,s2);
 
 
 int x=s1.compare(s2);
-if(x==0)
+if(x==0)//ASCII valude difference is '0'
 cout<<"strings are equal = "<<x;
 else if(x>0){
 cout<<"string s1 is having more character ..not same STRINGS = ";
