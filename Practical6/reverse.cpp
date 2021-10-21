@@ -1,7 +1,7 @@
 //reverse of string
 #include<iostream>
 #include<string.h>
-using namespace std;
+using namespace std;//without using predefined function in c++
 string rev(string s)
 {
 string c;
