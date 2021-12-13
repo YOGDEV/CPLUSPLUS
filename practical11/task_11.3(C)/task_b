@@ -1,0 +1,34 @@
+//PRACTICAL NO 11
+//SUB TASK 11.3 (c)//YOGESH SINGH YADAV
+#include<iostream>
+using namespace std;
+class A{
+      public:
+      void d()
+      {
+              cout<<"\nClass A\n";
+      }
+};
+
+class B{
+      public:
+      void d()
+      {
+              cout<<"\nClass B\n";
+      }
+};
+class C: public A,public B{
+     public:
+     void d3()
+     {
+             cout<<"\nClass C\n";
+     }
+};
+
+int main()
+{       C obj;
+        obj.d3();
+        obj.A::d();//no error
+        obj.B::d();//no error
+        return 0;
+}
