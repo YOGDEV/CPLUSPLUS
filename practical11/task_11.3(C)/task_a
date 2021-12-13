@@ -1,0 +1,33 @@
+//PRACTICAL NO 11
+//SUB TASK 11.3 (c)//YOGESH SINGH YADAV//this code generates error
+#include<iostream>
+using namespace std;
+class A{
+      public:
+      void d()
+      {
+              cout<<"\ndA\n";
+      }
+};
+
+class B{
+      public:
+      void d()
+      {
+              cout<<"\ndB\n";
+      }
+};
+class C: public A,public B{//multiple inheritance but not dimond problem...still ambigious condition
+     public:
+     void d3()
+     {
+             cout<<"\ndC\n";
+     }
+};
+
+int main()
+{       C obj;
+        obj.d3();
+        obj.d();//error
+        return 0;
+}
