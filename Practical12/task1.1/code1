@@ -1,4 +1,4 @@
-//practical no 11...(2.1)
+//practical no 12...(code 1)
 //use of public inheritance and checking accessibility of parent class methods in base class.
 #include<iostream>
 using namespace std;
