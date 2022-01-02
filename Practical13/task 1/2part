@@ -31,7 +31,7 @@ class child:public Base
 };
 
 int main()
-{
+{ 
  child c;
  
  cout<<"\nUsing Child Class object ...\n"; 
