@@ -15,7 +15,7 @@ class Base{
 class child:public Base
 {
         public:
-        virtual int add(int a,int b)//this is executed(b->add(1,2))
+        virtual int add(int a,int b)//this is executed(b->add(1,2))// if "int add(int a, float b) then always base class function's binding takes place...
         {
                 return a+b+1;
         }
