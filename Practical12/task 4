@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+class A{
+    public:
+    int a;
+    A(int a)
+    {
+        this->a=a;
+    }
+    void show()
+    {
+        cout<<"\n Base class constructor , initalisation :"<<a<<endl;
+    }
+};
+class B:public A{
+    public:
+    int b;
+    B(int b,int y):A(y)
+    {
+        //A(18);
+        this->b=b;
+    }
+    void sho()
+    { 
+        cout<<"\n Derived class constructor , initalisation :"<<b<<endl;
+    }
+};
+int main()
+{ 
+    B obj(10,78);
+    obj.sho();
+    obj.show();
+}
