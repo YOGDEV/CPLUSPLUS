@@ -1,0 +1,34 @@
+#include<iostream>
+#include<iomanip>
+#include<ios>
+#include<sstream>
+#include<string>
+using namespace std ;
+
+ int main()
+ {
+ int n =70;
+ cout <<"\nhex : \n"<< hex<< n<< endl;
+ cout <<"\ndec : \n"<< dec<< n<< endl;
+
+ char a,b,c;
+ stringstream s(" 123");
+ s>>skipws>>a>>b>>c;
+ cout <<"\nskipws : \n"<<a <<b<< c<<endl;
+
+ stringstream p(" 123");
+ p>>noskipws>>a>>b>>c;
+ cout <<"\nnoskipws : \n"<<a <<b<< c<<endl;
+
+ stringstream t(" this is a string");
+ string line;
+ getline(t >> ws,line);
+ cout <<"\nws : \n"<< line<<endl;
+ 
+ float f=12.98;
+ cout<<"\nsetW : \n"<<setw(10)<<f<<endl;
+ 
+ cout<<"\nsetprecision : \n"<<setprecision(9)<<f<<endl;
+
+
+ }
